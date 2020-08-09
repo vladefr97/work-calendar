@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../assets/fonts/fira_sans/FiraSans-SemiBold.ttf') format('opentype');
+  font-style: normal;
+  font-weight: 500;
+}
+.control-button {
+  border-radius: 50px;
+  background: transparent;
+  border: 1px solid #D3D8DF;
+  padding: 10px 30px;
+  cursor: pointer;
+  outline: none;
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 100%;
+  max-width: 300px;
+}
+.control-button.active {
+  background: #0066FF;
+  color: #FFFFFF;
+}
+.control-button.calendar-button .button-icon svg {
+  margin-left: -20px;
+  margin-right: 10px;
+}
+.control-button.calendar-button.auto-fill i {
+  color: #12C971;
+  font-size: 22px;
+  float: left;
+  text-align: left;
+}
+.control-button.calendar-button.auto-clear i {
+  color: #FF238D;
+}
+.calendar-table .cell {
+  width: 35px;
+  height: 30px;
+  background: #DFE4EF;
+}
+.calendar-table .cell:hover {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 2px solid #0066FF;
+  cursor: pointer;
+}
+.calendar-table .cell.active {
+  background: #0066FF;
+}
+body {
+  background: #E5E5E5;
+  font-family: 'Fira Sans';
+}
+body .wrapper .calendar-container {
+  width: 1100px;
+  height: 525px;
+  margin: auto;
+  background: #FFFFFF;
+  box-shadow: 0 1px 4px rgba(0, 15, 38, 0.1);
+  border-radius: 6px;
+}
+body .wrapper .calendar-container .calendar__work-area .pickers {
+  width: 80%;
+  margin: 0 auto;
+}
+body .wrapper .calendar-container .calendar__work-area .controls {
+  width: 70%;
+  margin: 25px auto;
+  text-align: right;
+}
+body .wrapper .controls-container {
+  padding: 30px;
+  text-align: center;
+}

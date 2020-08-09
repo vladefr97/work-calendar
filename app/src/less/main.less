@@ -1,0 +1,42 @@
+@import "base/variables";
+@import "base/button";
+@import "project/table";
+
+body {
+  background: @lighten_grey;
+  font-family: 'Fira Sans';
+
+  .wrapper {
+
+    .calendar-container {
+      width:1100px;
+      height: 525px;
+      margin: auto;
+      background: @base_white;
+      box-shadow: 0 1px 4px rgba(0, 15, 38, 0.1);
+      border-radius: 6px;
+
+      .calendar__work-area {
+        .pickers {
+          width: 80%;
+          margin: 0 auto;
+        }
+        .controls {
+          width: 70%;
+          margin: 25px auto;
+          text-align: right;
+          //button.calendar-button{
+          //  float: right;
+          //}
+
+        }
+
+      }
+    }
+
+    .controls-container {
+      padding: 30px;
+      text-align: center;
+    }
+  }
+}

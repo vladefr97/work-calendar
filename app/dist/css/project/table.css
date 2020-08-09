@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../assets/fonts/fira_sans/FiraSans-SemiBold.ttf') format('opentype');
+  font-style: normal;
+  font-weight: 500;
+}
+.calendar-table .cell {
+  width: 35px;
+  height: 30px;
+  background: #DFE4EF;
+}
+.calendar-table .cell:hover {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 2px solid #0066FF;
+  cursor: pointer;
+}
+.calendar-table .cell.active {
+  background: #0066FF;
+}
