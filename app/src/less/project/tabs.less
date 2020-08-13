@@ -1,0 +1,68 @@
+.tabs-container {
+  background: #F5F7FA;
+  text-align: center;
+  margin: 50px;
+
+  .step {
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+    width: 150px;
+    height: 50px;
+    margin:0;
+    //margin-left: -5px;
+    //padding-left: 5px;
+
+    &::after {
+      background: #DFE4EF;
+      content: '';
+      position: absolute;
+      height:4px;
+      margin-right: -5px;
+      width: 128px;
+      left: 89px;
+      bottom: 14px;
+      z-index: 1;
+    }
+    &.last::after{
+      display: none;
+    }
+
+    .step__number {
+      margin: 0 auto;
+      width: 28px;
+      height: 28px;
+      border: 2px solid #0066FF;
+      border-radius: 28px;
+      box-sizing: border-box;
+      //text-align: center;
+      .value {
+        font-size: 15px;
+        line-height: 21px;
+        margin-top: 2px;
+      }
+
+    }
+  }
+
+  .step-line {
+    display: inline-block;
+    width: 99px;
+    height: 2px;
+    background: black;
+    margin-left: -4px;
+    margin-right: -4px;
+    vertical-align: middle;
+  }
+
+  .names {
+
+    .name {
+      //text-align: center;
+      display: inline-block;
+    }
+
+  }
+
+
+}

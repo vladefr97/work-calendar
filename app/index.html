@@ -5,10 +5,80 @@
     <title>Title</title>
     <link rel="stylesheet" href="dist/css/main.css">
     <link rel="stylesheet" href="dist/css/components/font-awesome/css/font-awesome.min.css">
+
+    <!--    <script data-main="app/src/js/config" src='src/js/libs/require.js'></script>-->
+    <!--    <script src="src/js/project/main.js"></script>-->
+    <script data-main="src/js/libs/config" src="require.js"></script>
+    <script>
+        require(['config'], function () {
+            require(['js/customScripts/jqueryFile'])
+        })
+    </script>
 </head>
 <body>
 <div class="wrapper">
-    <div class="progress-container"></div>
+    <div class="tabs-container">
+
+        <div class="steps">
+            <div class="step">
+<!--                <div class="name">Тип нагрузки</div>-->
+                <div class="step__label">Тип Предприятия</div>
+                <div class="step__number"><div class="value">1</div></div>
+
+            </div>
+
+            <div class="step">
+<!--                <div class="name">Категории</div>-->
+                <div class="step__label">Категории</div>
+                <div class="step__number"><div class="value">2</div></div>
+
+            </div>
+
+            <div class="step">
+<!--                <div class="name">График работы</div>-->
+                <div class="step__label">График работы</div>
+                <div class="step__number"><div class="value">3</div></div>
+
+
+            </div>
+
+            <div class="step">
+<!--                <div class="name">Оборот и нагрузка</div>-->
+                <div class="step__label">Оборот и нагрузка</div>
+                <div class="step__number"><div class="value">4</div></div>
+
+            </div>
+
+            <div class="step">
+<!--                <div class="name">Должности</div>-->
+                <div class="step__label">Должности</div>
+                <div class="step__number"><div class="value">5</div></div>
+
+            </div>
+
+            <div class="step last">
+<!--                <div class="name">Тип нагрузки</div>-->
+                <div class="step__label">Тип нагрузки</div>
+                <div class="step__number"><div class="value">6</div></div>
+
+            </div>
+        </div>
+<!--        <div class="step">-->
+<!--            <div class="step__text">Тип педприятия</div>-->
+<!--            <div class="step__number"><div class="value">1</div></div>-->
+<!--        </div>-->
+<!--        <div class="step-line">-->
+<!--            <div class="active-line"></div>-->
+<!--        </div>-->
+<!--        <div class="step">-->
+<!--            <div class="step__text">Тип педприятия</div>-->
+<!--            <div class="step__number"><div class="value">1</div></div>-->
+<!--        </div>-->
+<!--        <div class="step">-->
+<!--            <div class="step__text">Тип педприятия</div>-->
+<!--            <div class="step__number"><div class="value">1</div></div>-->
+<!--        </div>-->
+    </div>
     <div class="calendar-container">
         <div class="calendar">
             <div class="calendar__title"></div>
@@ -244,8 +314,8 @@
     </div>
     <div class="controls-container">
         <div class="controls">
-            <button class="control-button">Назад</button>
-            <button class="control-button active">Далее</button>
+            <button class="control-button back">Назад</button>
+            <button class="control-button next active">Далее</button>
         </div>
     </div>
 </div>

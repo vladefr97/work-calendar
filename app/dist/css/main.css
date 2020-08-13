@@ -50,6 +50,58 @@
 .calendar-table .cell.active {
   background: #0066FF;
 }
+.tabs-container {
+  background: #F5F7FA;
+  text-align: center;
+  margin: 50px;
+}
+.tabs-container .step {
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+  width: 150px;
+  height: 50px;
+  margin: 0;
+}
+.tabs-container .step::after {
+  background: #DFE4EF;
+  content: '';
+  position: absolute;
+  height: 4px;
+  margin-right: -5px;
+  width: 128px;
+  left: 89px;
+  bottom: 14px;
+  z-index: 1;
+}
+.tabs-container .step.last::after {
+  display: none;
+}
+.tabs-container .step .step__number {
+  margin: 0 auto;
+  width: 28px;
+  height: 28px;
+  border: 2px solid #0066FF;
+  border-radius: 28px;
+  box-sizing: border-box;
+}
+.tabs-container .step .step__number .value {
+  font-size: 15px;
+  line-height: 21px;
+  margin-top: 2px;
+}
+.tabs-container .step-line {
+  display: inline-block;
+  width: 99px;
+  height: 2px;
+  background: black;
+  margin-left: -4px;
+  margin-right: -4px;
+  vertical-align: middle;
+}
+.tabs-container .names .name {
+  display: inline-block;
+}
 body {
   background: #E5E5E5;
   font-family: 'Fira Sans';
