@@ -1,5 +1,36 @@
 @import "../base/variables";
 .calendar-table{
+  th{
+    height: 30px;
+    font-size: 14px;
+    position: relative;
+    font-weight: normal;
+    text-align: left;
+    vertical-align: top;
+    .custom-border{
+      position: absolute;
+      height: 100%;
+      width:2px;
+      background: @lighten_grey;
+      bottom: -2px;
+      right: -2px;
+      z-index: 1;
+      &.half{
+        //bottom: -2px;
+        height: 50%;
+      }
+
+    }
+
+    //&.right{
+    //  &.full{
+    //    border-right: 2px solid @lighten_grey;
+    //  }
+    //}
+  }
+  .day{
+    padding-right: 10px;
+  }
   .cell{
     width: 35px;
     height: 30px;
@@ -8,8 +39,10 @@
       box-sizing: border-box;
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
-      border: 2px solid @base_blue;
+      outline: 2px solid @base_blue ;
+      //border-radius: 5px;
       cursor: pointer;
+      z-index: 100;
     }
 
     &.active {

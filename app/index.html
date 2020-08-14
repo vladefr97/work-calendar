@@ -20,47 +20,35 @@
     <div class="tabs-container">
 
         <div class="steps">
-            <div class="step">
+            <div class="step first active done">
 <!--                <div class="name">Тип нагрузки</div>-->
                 <div class="step__label">Тип Предприятия</div>
                 <div class="step__number"><div class="value">1</div></div>
-
             </div>
 
-            <div class="step">
-<!--                <div class="name">Категории</div>-->
+            <div class="step second active done">
                 <div class="step__label">Категории</div>
                 <div class="step__number"><div class="value">2</div></div>
-
             </div>
 
-            <div class="step">
-<!--                <div class="name">График работы</div>-->
+            <div class="step third active">
                 <div class="step__label">График работы</div>
                 <div class="step__number"><div class="value">3</div></div>
-
-
             </div>
 
             <div class="step">
-<!--                <div class="name">Оборот и нагрузка</div>-->
                 <div class="step__label">Оборот и нагрузка</div>
                 <div class="step__number"><div class="value">4</div></div>
-
             </div>
 
             <div class="step">
-<!--                <div class="name">Должности</div>-->
                 <div class="step__label">Должности</div>
                 <div class="step__number"><div class="value">5</div></div>
-
             </div>
 
             <div class="step last">
-<!--                <div class="name">Тип нагрузки</div>-->
                 <div class="step__label">Тип нагрузки</div>
                 <div class="step__number"><div class="value">6</div></div>
-
             </div>
         </div>
 <!--        <div class="step">-->
@@ -81,18 +69,28 @@
     </div>
     <div class="calendar-container">
         <div class="calendar">
-            <div class="calendar__title"></div>
+            <div class="calendar__title">
+                <h2>График работы предприятия</h2>
+            </div>
+            <div class="calendar__intervals">
+                <label for="input-start">Задать интервал таблицы:</label>
+                <input type="text" id="input-start" class="calendar start" placeholder="11:30">
+                <input type="text" class="calendar end" placeholder="03:00">
+            </div>
             <div class="calendar__work-area">
-                <div class="pickers">
+
+
+
                     <table class="calendar-table">
                         <tr>
-                            <th></th>
-                            <th>1</th>
-                            <th>1</th>
-                            <th>1</th>
+                            <th class="half right"></th>
+                            <th class="full right">11 <sup><small>30</small></sup> <div class="custom-border half"></div></th>
+                            <th class="half right"> <div class="custom-border"></div></th>
+                            <th class="full right">13 <sup><small>00</small></sup> <div class="custom-border half"></div></th>
                         </tr>
                         <tr>
                             <td class="day">Пн</td>
+                            <td class="cell active"></td>
                             <td class="cell"></td>
                             <td class="cell"></td>
                             <td class="cell"></td>
@@ -102,8 +100,7 @@
                             <td class="cell"></td>
                             <td class="cell"></td>
                             <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
+                            <td class="cell active"></td>
                             <td class="cell"></td>
                             <td class="cell"></td>
                             <td class="cell"></td>
@@ -282,7 +279,7 @@
                         </tr>
 
                     </table>
-                </div>
+
                 <div class="controls">
                     <button class="control-button calendar-button auto-fill">
                         <span class="button-icon"> <svg width="15" height="10" viewBox="0 0 15 10" fill="none"

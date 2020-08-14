@@ -1,40 +1,51 @@
 @import "base/variables";
 @import "base/button";
+@import "base/input-interval";
 @import "project/table";
 @import "project/tabs";
 
 body {
-  background: @lighten_grey;
+  background: #F5F7FA;
   font-family: 'Fira Sans';
 
   .wrapper {
 
     .calendar-container {
-      width:1100px;
+      width: 1100px;
       height: 525px;
       margin: auto;
       background: @base_white;
       box-shadow: 0 1px 4px rgba(0, 15, 38, 0.1);
       border-radius: 6px;
 
-      .calendar__work-area {
-        .pickers {
-          width: 80%;
-          margin: 0 auto;
+      .calendar {
+        width: 80%;
+        margin: 0 auto;
+
+        .calendar__title{
+          padding-top: 50px;
         }
-        .controls {
-          width: 70%;
-          margin: 25px auto;
-          text-align: right;
-          //button.calendar-button{
-          //  float: right;
-          //}
+        .calendar__intervals{
+          margin-bottom: 15px;
+          label{
+            font-family: 'Fira Sans';
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 100%;
+          }
 
         }
-
+        .calendar__work-area {
+          .pickers {
+          }
+          .controls {
+            width: 95%;
+            margin: 25px auto;
+            text-align: right;
+          }
+        }
       }
     }
-
     .controls-container {
       padding: 30px;
       text-align: center;

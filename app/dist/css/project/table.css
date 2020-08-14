@@ -1,8 +1,37 @@
 @font-face {
   font-family: 'Fira Sans';
-  src: url('../assets/fonts/fira_sans/FiraSans-SemiBold.ttf') format('opentype');
+  src: url('../assets/fonts/fira_sans/FiraSans-SemiBold.ttf') format('truetype');
   font-style: normal;
   font-weight: 500;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../assets/fonts/fira_sans/FiraSans-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+.calendar-table th {
+  height: 30px;
+  font-size: 14px;
+  position: relative;
+  font-weight: normal;
+  text-align: left;
+  vertical-align: top;
+}
+.calendar-table th .custom-border {
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background: #E5E5E5;
+  bottom: -2px;
+  right: -2px;
+  z-index: 1;
+}
+.calendar-table th .custom-border.half {
+  height: 50%;
+}
+.calendar-table .day {
+  padding-right: 10px;
 }
 .calendar-table .cell {
   width: 35px;
@@ -13,8 +42,9 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  border: 2px solid #0066FF;
+  outline: 2px solid #0066FF;
   cursor: pointer;
+  z-index: 100;
 }
 .calendar-table .cell.active {
   background: #0066FF;

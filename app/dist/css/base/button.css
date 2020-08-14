@@ -1,8 +1,14 @@
 @font-face {
   font-family: 'Fira Sans';
-  src: url('../assets/fonts/fira_sans/FiraSans-SemiBold.ttf') format('opentype');
+  src: url('../assets/fonts/fira_sans/FiraSans-SemiBold.ttf') format('truetype');
   font-style: normal;
   font-weight: 500;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../assets/fonts/fira_sans/FiraSans-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
 }
 .control-button {
   border-radius: 50px;
