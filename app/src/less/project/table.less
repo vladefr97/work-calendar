@@ -1,5 +1,10 @@
 @import "../base/variables";
-.calendar-table{
+.calendar__table{
+  td.day{
+    max-width:35px;
+    text-align: center;
+    //padding: 0;
+  }
   th{
     height: 30px;
     font-size: 14px;
@@ -7,6 +12,17 @@
     font-weight: normal;
     text-align: left;
     vertical-align: top;
+    &.last{
+      .custom-border{
+        display: none;
+      }
+    }
+    .time{
+      position: absolute;
+      width: 40px;
+
+    }
+
     .custom-border{
       position: absolute;
       height: 100%;
@@ -16,37 +32,33 @@
       right: -2px;
       z-index: 1;
       &.half{
-        //bottom: -2px;
         height: 50%;
       }
-
     }
-
-    //&.right{
-    //  &.full{
-    //    border-right: 2px solid @lighten_grey;
-    //  }
-    //}
   }
   .day{
     padding-right: 10px;
   }
-  .cell{
+ td.calendar__cell{
     width: 35px;
     height: 30px;
     background: @darken_grey;
+    cursor: pointer;
     &:hover {
       box-sizing: border-box;
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
       outline: 2px solid @base_blue ;
       //border-radius: 5px;
-      cursor: pointer;
+
       z-index: 100;
     }
-
+    &.half-time{
+      width: 15px;
+    }
     &.active {
       background: @base_blue;
+      transition:  background-color 500ms ease-in;
     }
   }
 

@@ -8,12 +8,13 @@
 
     <!--    <script data-main="app/src/js/config" src='src/js/libs/require.js'></script>-->
     <!--    <script src="src/js/project/main.js"></script>-->
-    <script data-main="src/js/libs/config" src="require.js"></script>
-    <script>
-        require(['config'], function () {
-            require(['js/customScripts/jqueryFile'])
-        })
+
+    <script data-main="src/js/config" src="require.js"></script>
+<!--    <script data-main="src/js/config" src="require.js"></script>-->
+    <script src="src/js/main.js">
+
     </script>
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>-->
 </head>
 <body>
 <div class="wrapper">
@@ -81,201 +82,38 @@
 
 
 
-                    <table class="calendar-table">
-                        <tr>
+                    <table class="calendar__table">
+                        <tr class="calendar__header">
                             <th class="half right"></th>
-                            <th class="full right">11 <sup><small>30</small></sup> <div class="custom-border half"></div></th>
-                            <th class="half right"> <div class="custom-border"></div></th>
-                            <th class="full right">13 <sup><small>00</small></sup> <div class="custom-border half"></div></th>
+
                         </tr>
-                        <tr>
+                        <tr class="calendar__row">
                             <td class="day">Пн</td>
-                            <td class="cell active"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell active"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
+
                         </tr>
-                        <tr>
+                        <tr class="calendar__row">
                             <td class="day">Вт</td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
+
                         </tr>
-                        <tr>
+                        <tr class="calendar__row">
                             <td class="day">Ср</td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
+
                         </tr>
-                        <tr>
+                        <tr class="calendar__row">
                             <td class="day">Чт</td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
+
                         </tr>
-                        <tr>
+                        <tr class="calendar__row">
                             <td class="day">Пт</td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
+
                         </tr>
-                        <tr>
+                        <tr class="calendar__row">
                             <td class="day">Сб</td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
+
                         </tr>
-                        <tr>
+                        <tr class="calendar__row">
                             <td class="day">Вс</td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
-                            <td class="cell"></td>
+
                         </tr>
 
                     </table>

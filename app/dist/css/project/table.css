@@ -1,51 +1,9 @@
-@font-face {
-  font-family: 'Fira Sans';
-  src: url('../assets/fonts/fira_sans/FiraSans-SemiBold.ttf') format('truetype');
-  font-style: normal;
-  font-weight: 500;
-}
-@font-face {
-  font-family: 'Fira Sans';
-  src: url('../assets/fonts/fira_sans/FiraSans-Regular.ttf') format('truetype');
-  font-style: normal;
-  font-weight: normal;
-}
-.calendar-table th {
-  height: 30px;
-  font-size: 14px;
-  position: relative;
-  font-weight: normal;
-  text-align: left;
-  vertical-align: top;
-}
-.calendar-table th .custom-border {
-  position: absolute;
-  height: 100%;
-  width: 2px;
-  background: #E5E5E5;
-  bottom: -2px;
-  right: -2px;
-  z-index: 1;
-}
-.calendar-table th .custom-border.half {
-  height: 50%;
-}
-.calendar-table .day {
-  padding-right: 10px;
-}
-.calendar-table .cell {
-  width: 35px;
-  height: 30px;
-  background: #DFE4EF;
-}
-.calendar-table .cell:hover {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  outline: 2px solid #0066FF;
-  cursor: pointer;
-  z-index: 100;
-}
-.calendar-table .cell.active {
-  background: #0066FF;
-}
+@font-face{font-family:'Fira Sans';src:url('../assets/fonts/fira_sans/FiraSans-SemiBold.ttf') format('truetype');font-style:normal;font-weight:500}
+@font-face{font-family:'Fira Sans';src:url('../assets/fonts/fira_sans/FiraSans-Regular.ttf') format('truetype');font-style:normal;font-weight:normal}
+.calendar__table td.day{max-width:35px;text-align:center}.calendar__table th{height:30px;font-size:14px;position:relative;font-weight:normal;text-align:left;vertical-align:top}
+.calendar__table th.last .custom-border{display:none}.calendar__table th .time{position:absolute;width:40px}
+.calendar__table th .custom-border{position:absolute;height:100%;width:2px;background:#e5e5e5;bottom:-2px;right:-2px;z-index:1}
+.calendar__table th .custom-border.half{height:50%}.calendar__table .day{padding-right:10px}
+.calendar__table td.calendar__cell{width:35px;height:30px;background:#dfe4ef;cursor:pointer}
+.calendar__table td.calendar__cell:hover{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;outline:2px solid #06f;z-index:100}
+.calendar__table td.calendar__cell.half-time{width:15px}.calendar__table td.calendar__cell.active{background:#06f;-webkit-transition:background-color 500ms ease-in;transition:background-color 500ms ease-in}
