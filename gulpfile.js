@@ -2,7 +2,7 @@ const gulp = require('gulp') ;
 const less = require('gulp-less');
 const uglifycss = require('gulp-uglifycss');
 const path = require('path');
-const browserSync = require('browser-sync').create();
+// const browserSync = require('browser-sync').create();
 const autoprefixer = require('gulp-autoprefixer');
 
 
