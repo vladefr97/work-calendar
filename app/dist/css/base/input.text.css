@@ -1,0 +1,9 @@
+input.calendar {
+  border: none;
+  background: transparent;
+  padding: 4px;
+  outline: none;
+  border-bottom: 2px solid grey;
+  display: inline-block;
+  max-width: 80px;
+}

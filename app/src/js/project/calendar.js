@@ -141,12 +141,10 @@ define('calendar', ['jquery', 'calendarCell'], function ($, CalendarCell) {
                 this.data.rows[index].push(new CalendarCell($(row).find(this.data.cellSelector).last()))
             })
         };
-
         this.appendColumnHeader = function (headerTime, isHalfed) {
             let cellHTML = this.view._getHeadCellHTML(headerTime, isHalfed);
             $(this.data.headRowSelector).append(cellHTML);
         }
-
         this.appendEmptyColumnHeader = function (isHalfed) {
             let cellHTML = this.view._getEmptyHeadCellHTML(isHalfed);
             $(this.data.headRowSelector).append(cellHTML);
@@ -190,7 +188,6 @@ define('calendar', ['jquery', 'calendarCell'], function ($, CalendarCell) {
             }
             $(this.data.headCellSelector).last().addClass('last');
         };
-
         this._getCellsBetweenTimes = function () {
             let hoursCount = 0,
                 withFirstHalfCell = false,

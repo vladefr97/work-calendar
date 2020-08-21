@@ -8,7 +8,6 @@ define('calendarCell', ['jquery'], function ($) {
         }
         this.toggleActivation = () => {
             $(selector).toggleClass('active');
-            // this.data.isActive = !this.data.isActive;
         };
         this.resetActive = () => {
             $(selector).removeClass('active');

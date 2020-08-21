@@ -2,35 +2,27 @@ require(['config'], function () {
     require(['jquery', 'calendar', 'jqueryMaskedInput'], function ($, Calendar) {
         let calendar = new Calendar();
         calendar.init();
-        calendar.limitByTimeInterval('00:00','24:00');
+        calendar.limitByTimeInterval('00:00', '24:00');
+        //Fill button handling
         $('.auto-fill').on('click', () => {
             calendar.fill();
         });
+        //Clear button handling
         $('.auto-clear').on('click', () => {
             calendar.clear();
         });
-        $('input.calendar').mask('99:99');
+        //Time inputs handling
+        $('input.calendar').mask('99:99').on('change', () => {
+            let hasEmptyInput = false;
+            $.each($('input.calendar'), (index, input) => {
+                if ($(input).val() === '') {
+                    hasEmptyInput = true;
+                }
+            })
+            if (!hasEmptyInput)
+                calendar.limitByTimeInterval($('.calendar.start').val(), $('.calendar.end').val());
+        })
 
-        $('.control-button.next').on('click', () => {
-            calendar.limitByTimeInterval($('.calendar.start').val(), $('.calendar.end').val());
-            // calendar.deleteColumn();
-        });
-        $('.control-button.back').on('click', () => {
-            calendar.appendColumn();
-        });
     });
 
-
-    // sec.appendRow();
-
-
-    // require(['calendar'], function () {
-    //         const calendar = new Table('ddd')
-    //         calendar.appendRow();
-    // })
-    // define(['jquery'],function ($){
-    //     // const calendar = new Table('ddd')
-    //     // calendar.appendRow();
-    // })
-    // const Table = require(['project/calendar'])
 })
