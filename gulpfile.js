@@ -44,12 +44,12 @@ gulp.task('watch less', function () {
     gulp.watch('./app/src/less/**/*.less', gulp.series('less'));
     // Другие отслеживания
 })
-gulp.task('browserSync', function () {
-    browserSync.init({
-        server: {
-            baseDir: 'app'
-        },
-    })
-})
+// gulp.task('browserSync', function () {
+//     browserSync.init({
+//         server: {
+//             baseDir: 'app'
+//         },
+//     })
+// })
 
-gulp.task('default', gulp.parallel('browserSync', 'watch less'),);
+gulp.task('default', gulp.parallel( 'watch less'),);
