@@ -23,7 +23,6 @@
     "gulp-autoprefixer": "^7.0.1",
     "gulp-less": "^4.0.1",
     "gulp-uglifycss": "^1.1.0",
-    "@fortawesome/fontawesome-free": "^5.14.0",
-//    "browser-sync": "^2.26.12"
+    "@fortawesome/fontawesome-free": "^5.14.0"
   }
 }
