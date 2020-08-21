@@ -2,7 +2,7 @@ const gulp = require('gulp') ;
 const less = require('gulp-less');
 const uglifycss = require('gulp-uglifycss');
 const path = require('path');
-// const browserSync = require('browser-sync').create();
+const browserSync = require('browser-sync').create();
 const autoprefixer = require('gulp-autoprefixer');
 
 
@@ -44,12 +44,12 @@ gulp.task('watch less', function () {
     gulp.watch('./app/src/less/**/*.less', gulp.series('less'));
     // Другие отслеживания
 })
-// gulp.task('browserSync', function () {
-//     browserSync.init({
-//         server: {
-//             baseDir: 'app'
-//         },
-//     })
-// })
+gulp.task('browserSync', function () {
+    browserSync.init({
+        server: {
+            baseDir: 'app'
+        },
+    })
+})
 
-gulp.task('default', gulp.parallel( 'watch less'),);
+gulp.task('default', gulp.parallel('browserSync'),);
