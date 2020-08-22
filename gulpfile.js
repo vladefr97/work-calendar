@@ -4,7 +4,6 @@ const uglifycss = require('gulp-uglifycss');
 const path = require('path');
 const browserSync = require('browser-sync').create();
 const autoprefixer = require('gulp-autoprefixer');
-const  connect = require('gulp-connect');
 
 
 
@@ -52,12 +51,5 @@ gulp.task('browserSync', function () {
         },
     })
 })
-gulp.task('serveprod', function() {
-    connect.server({
-        root: ['app'],
-        port: process.env.PORT || 5000, // localhost:5000
-        livereload: false
-    });
-});
 
-gulp.task('default', gulp.parallel('browserSync'),);
+gulp.task('default', gulp.parallel('browserSync', 'watch less'),);
