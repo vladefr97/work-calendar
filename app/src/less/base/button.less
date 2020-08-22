@@ -1,6 +1,5 @@
 @import "variables";
 
-
 .control-button {
   border-radius: 50px;
   background: transparent;
@@ -13,38 +12,21 @@
   font-weight: 500;
   font-size: 15px;
   line-height: 100%;
-
   max-width: 300px;
+
   &.active {
     background: @base_blue;
     color: @base_white;
   }
 
   &.calendar-button {
- .button-icon{
-   //margin-right: 10px;
-   svg{
-     margin-left: -20px;
-     margin-right: 10px;
+    .button-icon {
+      svg {
+        margin-left: -20px;
+        margin-right: 10px;
+      }
+    }
 
-   }
-
- }
-
-
- //display: grid;
- //   grid-template-rows: repeat(1, 1fr);
- //   grid-template-columns: repeat(10, 1fr);
- //   grid-template-areas: "icn icn txt txt txt txt txt txt txt txt" ;
- //   .button-icon{
- //     grid-area: icn;
- //     text-align: left;
- //
- //     font-size: 18px;
- //   }
- //   .button-text{
- //     grid-area: txt;
- //   }
     &.auto-fill {
       i {
         color: @base_green;
@@ -60,5 +42,4 @@
       }
     }
   }
-
 }
