@@ -1,13 +1,13 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-
+const PORT = process.env.PORT || 3000;
 app.use(express.static('app'));
 app.get('/', function (req, res) {
     res.sendfile('app/index.html')
 });
 
-app.listen(process.env.PORT || 3000, () => {
-    console.log('server has been started!')
+app.listen(PORT, () => {
+    console.log(`server has been started on port ${PORT}`)
 });
 
